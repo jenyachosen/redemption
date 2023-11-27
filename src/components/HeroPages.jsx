@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function HeroPages({ name }) {
   return (
@@ -9,7 +9,7 @@ function HeroPages({ name }) {
           <div className="hero-pages__text">
             <h3>{name}</h3>
             <p>
-              <Link to="/">Home</Link> / {name}
+              <Link to="/">На головну</Link> / {name}
             </p>
           </div>
         </div>

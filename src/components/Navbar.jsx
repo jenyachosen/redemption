@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import Logo from "../images/logo/logo.png";
-import { useState } from "react";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { Link } from 'react-router-dom';
+import Logo from '../images/logo/logo.png';
+import { useState } from 'react';
+import { IconMenu2, IconX } from '@tabler/icons-react';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -14,7 +14,7 @@ function Navbar() {
     <>
       <nav>
         {/* mobile */}
-        <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
+        <div className={`mobile-navbar ${nav ? 'open-nav' : ''}`}>
           <div onClick={openNav} className="mobile-navbar__close">
             <IconX width={30} height={30} />
           </div>
@@ -41,7 +41,7 @@ function Navbar() {
             </li>
             <li>
               <Link onClick={openNav} to="/team">
-                Our Team
+                Наша команда
               </Link>
             </li>
             <li>
@@ -67,31 +67,31 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              {" "}
+              {' '}
               <Link className="about-link" to="/about">
                 About
               </Link>
             </li>
             <li>
-              {" "}
+              {' '}
               <Link className="models-link" to="/models">
                 Vehicle Models
               </Link>
             </li>
             <li>
-              {" "}
+              {' '}
               <Link className="testi-link" to="/testimonials">
                 Testimonials
               </Link>
             </li>
             <li>
-              {" "}
+              {' '}
               <Link className="team-link" to="/team">
-                Our Team
+                Наша команда
               </Link>
             </li>
             <li>
-              {" "}
+              {' '}
               <Link className="contact-link" to="/contact">
                 Contact
               </Link>
